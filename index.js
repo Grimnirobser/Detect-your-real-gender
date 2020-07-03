@@ -95,6 +95,7 @@ function getValue()
 	    	case '4678': document.getElementById('result').value = "Bigender";break;
 	    	case '45678': document.getElementById('result').value = "Pangender";break;
 	    	default:
+	    		document.getElementById('result').value = ""；
 	    		alert('沒有符合的條件');
 	    }
 
