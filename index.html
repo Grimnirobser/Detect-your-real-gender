@@ -6,41 +6,88 @@
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 <meta http-equiv="description" content="this is my page">
 <meta http-equiv="content-type" content="text/html; charset=GB18030">
-<script src="index.js"></script>
+<link rel="stylesheet" type="text/css" href="css/main.css"> 
+<script src="js/index.js"></script>
 </head>
-<body>
+
+<body bgcolor="#000000">
+	<h1 style="color: white;text-align: center;">Who Am I?</h1>
+
+	<div id="con">
+	<img id="pic" src="image/real_cover.png">
+</div>
+
+
+<div align="center" style="color: white;position:relative;margin-top:50px">
+	<p>
+		Introduction
+	</p>
+	</div>
 
 <table>
 
 	<tr>
-	<td>
-	1.性别:
-	<input type="radio" name="gender" value="1" checked="true"/>男
-	<input type="radio" name="gender" value="2"/>女
-	<input type="radio" name="gender" value="3"/>双性
-	<input type="radio" name="gender" value="4"/>无性别
+	<td style="color: white">
+	1.Choose one of the followings as your gender:
+	<div style="position: relative;margin-top: 30px">
+		<img src="image/man.png" height="300" width="250">
+	<input type="radio" name="gender" value="1" checked="true"/>
+
+		<img src="image/woman.png" height="300" width="250">
+	<input type="radio" name="gender" value="2"/>
+
+		<img src="image/bisexual.png" height="300" width="250">
+	<input type="radio" name="gender" value="3"/>
+
+		<img src="image/agender.png" height="300" width="250">
+	<input type="radio" name="gender" value="4"/>
+</div>
+
+
 	</td>
 	</tr>
 
 	<tr>
-	<td>
-	2.气质:
-	<input type="checkbox" id="e" name="temper" value="5"/>男
-	<input type="checkbox" id="f" name="temper" value="6"/>女
-	<input type="checkbox" id="g" name="temper" value="7"/>双气质
-	<input type="checkbox" id="h" name="temper" value="8"/>无气质
+	<td style="color: white">
+
+	<div style="color: white;position:relative;margin-top:50px">
+	2.Choose one or more of followings as your temper:
+</div>
+
+<div style="position: relative;margin-top: 30px">
+	<img src="image/man1.png" height="130" width="250">
+	<input type="checkbox" id="e" name="temper" value="5"/>
+
+	<img src="image/woman1.png" height="130" width="250">
+	<input type="checkbox" id="f" name="temper" value="6"/>
+
+	<img src="image/bisexual1.png" height="130" width="250">
+	<input type="checkbox" id="g" name="temper" value="7"/>
+
+	<img src="image/agender1.png" height="130" width="250">
+	<input type="checkbox" id="h" name="temper" value="8"/>
+
+</div>
 	</td>
 	</tr>
 
 	<tr>
-	<td>
-	结果：<output id="result"></output>
+	<td style="color: white">
+
+<div style="position: relative;margin-top: 30px">
+	result：<output id="result"></output>
+</div>
+<div id="myDiv" style="border:1px solid #000000;width:250px;height:300px;"></div>
 	</td>
 	</tr>
 
-		<div align="center" style="position:relative;top:100px">
-    	<button type="button" onclick="calculate()">提交</button>
+	<tr>
+		<td>
+		<div align="center" style="position:relative;margin-top:5px">
+    	<button type="button" onclick="calculate()">submit</button>
 		</div>
+	</td>
+</tr>
 
 </table>
 
