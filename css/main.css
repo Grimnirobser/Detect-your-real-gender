@@ -7,4 +7,9 @@ body{
     #pic{ 
         width:100%;
     }
+    .main{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+	}
 </style>
